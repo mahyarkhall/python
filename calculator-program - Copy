@@ -1,0 +1,26 @@
+#python operator
+
+
+
+operator =input(" Enter the type of operator you want (+, -, *, /) : ")
+num1 = float(input("please enter the first number : "))
+num2 = float(input("enter the 2nd number : "))
+
+
+# print(num1 + num2)
+
+
+if operator == "+" :
+    result = num1 + num2
+    print(f"the result is {round(result, 2)}")
+elif operator == "-" :
+    result = num1 - num2
+    print(f"the result is {round(result, 2)}")
+elif operator == "*":
+    result = num1 * num2
+    print(f"the result is {round(result, 2)}")
+elif operator == "/" :
+    result = num1 / num2
+    print(f"the result is {round(result, 2)}")
+else: 
+    print("invalid operator plase enter something appropriate_")

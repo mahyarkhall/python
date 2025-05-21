@@ -1,0 +1,12 @@
+unit = str(input("is your temprature in Celcius or Fahrenheit (C/F): "))
+temp = float(input("Enter the temprature : "))
+
+
+if unit =="C": 
+    temp = round((9 * temp) /5 +32 , 2 )
+    print(f"the masurment in Fahrenheit is : {temp}℉")
+elif unit == "F":
+    temp = round((temp-32) * (5/9),2)
+    print(f"the masurment in Celcius is : {temp}℃")    
+else:
+    print(f"{unit} is an invalid unit of masurment")

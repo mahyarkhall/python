@@ -1,0 +1,25 @@
+import math
+#python compound interest calculator
+
+
+print("hi we are gonna calculat how much money you will have if put your money where they give you compound interest! ")
+ok = input("do want to continue : ")
+while not ok =="yes":
+    print("ok but first things first we need somethings")
+    ok = input("do want to continue : ")
+    print("thank for agreeing to terms of service now we need a few things : ")
+initial = int(input("please tell us how much money did you give them? : "))
+intrest = int(input("please enter the interest rate they offer in %  :  "))
+time_period = input("what is the time frame in which they offer interest? : ")
+time_passed= int(input("how much time has passed in accordance with the time time frame? :  "))
+time_passed_floor= math.floor(time_passed)
+final_amount_money = initial * ((1+intrest/100)** time_passed_floor )
+
+print(f"your money will turn into {final_amount_money}$ after 4 years!!!!")
+thoughts = str(input("so do you think is it worth it ? (yes/ no) :  "))
+if thoughts =="yes":
+    print("i think you have your answer go ahead and invest  !!")
+elif thoughts == "no":
+    print("so don't invest and find something better ")
+else: 
+    print("whacha sayinhg  b0000yyy????????????")
